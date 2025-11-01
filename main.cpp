@@ -71,10 +71,13 @@ void rm(int **mtx, int r)
 int **makeM(int r,const size_t *lns)
 {
   int **mtx = new int * [r];
-  for (size_t i = 0; i<r;i++){
-    try{
+  for (size_t i = 0; i<r;i++)
+  {
+    try
+    {
         mtx[i] = new int[lns[i]];
-    } catch(const std::bad_alloc &){
+    } catch(const std::bad_alloc &)
+    {
         rm(mtx,i);
         throw;
     }
@@ -98,9 +101,9 @@ int ** convert(const int * t, size_t n, const size_t * lns, size_t rows)
 {
   int **res = makeM(rows,lns);
   size_t s = 0,pos = 0;
-  while (s<pos)
+  while (s<n)
   {
-    for (size_t i = 0; i<lns[pos];)
+    for (size_t i = 0; i<lns[pos];i++)
     {
         res[pos][i] = t[s+i];
   
