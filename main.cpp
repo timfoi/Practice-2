@@ -6,8 +6,6 @@ void outM(const int *const *mtx, int r, const size_t *lns);
 void rm(int **mtx, int r);
 int **convert(const int * t, size_t n, const size_t * lns, size_t rows);
 
-
-
 int main()
 {
   size_t n = 0, rows = 0;
