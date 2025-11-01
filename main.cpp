@@ -107,4 +107,5 @@ int ** convert(const int * t, size_t n, const size_t * lns, size_t rows)
     }
     s += lns[pos++];
   }
+  return res;
 }
