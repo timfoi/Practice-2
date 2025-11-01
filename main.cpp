@@ -1,5 +1,6 @@
 #include <iostream>
 #include <new>
+#include <cstddef>
 
 int **makeM(int r, const size_t *lns);
 void outM(const int *const *mtx, int r, const size_t *lns);
